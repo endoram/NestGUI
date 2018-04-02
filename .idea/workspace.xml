@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5961c75-17e0-4803-bc52-fbb520d35855" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/NextGUI/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/NextGUI/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="c5961c75-17e0-4803-bc52-fbb520d35855" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/NextGUI/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="51" />
     <option name="y" value="25" />
     <option name="width" value="1869" />
@@ -191,7 +189,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="25" width="1869" height="1055" extended-state="6" />
+    <frame x="51" y="25" width="1869" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
