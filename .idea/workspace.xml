@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5961c75-17e0-4803-bc52-fbb520d35855" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/NextGUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NextGUI/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NextGUI/src/main/java/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/NextGUI/src/main/java/Gui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NextGUI/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/NextGUI/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NextGUI/src/main/java/NextSR.java" beforeDir="false" afterPath="$PROJECT_DIR$/NextGUI/src/main/java/NextSR.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/NextGUI/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +35,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -250,8 +247,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
