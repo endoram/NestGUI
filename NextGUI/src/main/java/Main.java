@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.awt.Desktop;
 import java.net.URI;
 
-public class Main {
+public class Main implements GuiDel {
 
     final static String authUrl = "https://home.nest.com/login/oauth2?client_id=85b1b461-5491-4ba2-ba7f-ae498c9e98ec&state=STATE";
 
@@ -21,9 +21,29 @@ public class Main {
         }
     }
 
+    private static String getCode() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What is the code on the website?");
+        return sc.next();
+    }
+
+    @Override
+    public void codeEnter(String code) {
+        new NestSR(code, TempSystem.AUTO);
+    }
+
+    @Override
+    public void increment() {
+
+    }
+
+    @Override
+    public void decrement() {
+
+    }
+
     public static void main(String[] args){
-        Gui gui = new Gui();
-        gui.startgui();
         displayPage();
+        Gui.startgui(new Main());
     }
 }
