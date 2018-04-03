@@ -22,5 +22,11 @@ public class Main {
     }
 
     public static void main(String[] args){
+        Gui gui = new Gui();
+        gui.startgui();
+
+        displayPage();
+        String code = getCode();
+        //NestSR nsr = new NestSR(code);
     }
 }
