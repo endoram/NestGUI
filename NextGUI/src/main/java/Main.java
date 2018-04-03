@@ -21,15 +21,6 @@ public class Main {
         }
     }
 
-    private static String getCode() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("What is the code on the website?");
-        return sc.next();
-    }
-
     public static void main(String[] args){
-        displayPage();
-        String code = getCode();
-        //NestSR nsr = new NestSR(code);
     }
 }
