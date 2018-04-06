@@ -7,6 +7,9 @@ public class Main implements GuiDel {
 
     final static String authUrl = "https://home.nest.com/login/oauth2?client_id=85b1b461-5491-4ba2-ba7f-ae498c9e98ec&state=STATE";
 
+    static NestSR nestMan;
+    static NestInformation nestInformation;
+
     private static void displayPage() {
         try {
             URI uri = new URI(authUrl);
@@ -29,12 +32,17 @@ public class Main implements GuiDel {
 
     @Override
     public void codeEnter(String code) {
-        new NestSR(code, TempSystem.AUTO);
+        nestMan = new NestSR(code, TempSystem.AUTO);
+        NestInformation ti = nestMan.getNestInfo();
+        nestInformation = ti;
+        Gui.displayNest(ti);
     }
 
     @Override
     public void increment() {
-
+        nestInformation.target++;
+        Gui.displayNest(nestInformation);
+        nestMan.setTarget(nestInformation.code, nestInformation.target);
     }
 
     @Override

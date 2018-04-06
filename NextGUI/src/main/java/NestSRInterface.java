@@ -1,4 +1,4 @@
 public interface NestSRInterface {
-    public NestInformation getTempInfo();
+    public void getNestInfo();
     public void setTargetTemp(double temp);
 }
