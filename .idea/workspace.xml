@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5961c75-17e0-4803-bc52-fbb520d35855" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/NextGUI/src/main/java/GuiDel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NextGUI/src/main/java/Guidel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NextGUI/NextGUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NextGUI/NextGUI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NextGUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NextGUI/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NextGUI/src/main/java/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/NextGUI/src/main/java/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NextGUI/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/NextGUI/src/main/java/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/NextGUI/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="378">
+              <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,17 +29,17 @@
       <file leaf-file-name="GuiDel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/GuiDel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="45">
+              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="75">
+              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#968#969#0" expanded="true" />
@@ -76,8 +70,8 @@
       <file leaf-file-name="NestSR.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/NestSR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="285">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,6 +97,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Window</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -111,11 +110,11 @@
       <list>
         <option value="$PROJECT_DIR$/NextGUI/src/main/java/NextSR.java" />
         <option value="$PROJECT_DIR$/NextGUI/src/main/java/NestSRInterface.java" />
-        <option value="$PROJECT_DIR$/NextGUI/src/main/java/GuiDel.java" />
         <option value="$PROJECT_DIR$/NextGUI/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/NextGUI/src/main/java/Gui.java" />
         <option value="$PROJECT_DIR$/NextGUI/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/NextGUI/src/main/java/GuiDel.java" />
+        <option value="$PROJECT_DIR$/NextGUI/src/main/java/Gui.java" />
       </list>
     </option>
   </component>
@@ -292,18 +291,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.29100528" />
+      <window_info active="true" anchor="bottom" id="Messages" order="3" visible="true" weight="0.29100528" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.31534392" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.21481481" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32910052" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.129481" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.129481" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
@@ -321,10 +320,10 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.18835978" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.21481481" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.1353665" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.129481" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -341,7 +340,7 @@
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32910052" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.29100528" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
@@ -365,23 +364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/NestInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/NestSR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -412,16 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/Gui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/TempSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -429,21 +401,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/GuiDel.java">
+    <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/NestInformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/NestSR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="75">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#968#969#0" expanded="true" />
             <element signature="e#995#996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/GuiDel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NextGUI/src/main/java/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
