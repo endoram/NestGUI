@@ -6,8 +6,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import javafx.geometry.Rectangle2D;
+import javafx.stage.Screen;
 
-//Incharge of the gui
+
+//Class in charge of the gui also extends class Application
 public class Gui extends Application {
 
     //Define the vars for labels buttons stages...
@@ -15,10 +18,12 @@ public class Gui extends Application {
     Button getcode;
     TextField textfieldcode;
 
+
     Stage window;
     Scene scene, scene1;
 
     static GuiDel gd;
+    static NestSRInterface nsri;
 
     public static void startgui(GuiDel gd){
         Gui.gd = gd;
@@ -27,41 +32,47 @@ public class Gui extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        //Set title to NestGUI
-        window = primaryStage;
+        window = primaryStage;                                                         //Sets the primary stage to the var window
+        Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();       //Gets the boundary for the screen
 
 
-        Label label1 = new Label("Hey Test");
+        //Define vars for layout1
+        Label emtpy = new Label("Code:");           //Creates a label var
+        TextField textfieldcode = new TextField();       //Creates a empty text field var
+        Button getcode = new Button("Activate");    //Creates var for button
 
-
-        Label emtpy = new Label("Code:");
-        TextField textfieldcode = new TextField();
-        Button getcode = new Button("Activate");
-
+        //Button for activating code in text field
         getcode.setOnAction(e -> {
             String codeinfo = textfieldcode.getText();
             gd.codeEnter(codeinfo);
             window.setScene(scene1);
         });
 
-
-        GridPane layout1 = new GridPane();
-        layout1.setAlignment(Pos.CENTER);
-        layout1.add(emtpy, 3, 3);
-        layout1.add(textfieldcode, 4, 3);
-        layout1.add(getcode, 5, 3);
-        scene = new Scene(layout1, 500, 500);
-
-
-
-        GridPane grid = new GridPane();
-        grid.add(label1, 1, 2);
-        scene1 = new Scene(grid, 500, 500);
+        //This is the first layout, this layout hs you input the code
+        GridPane layout1 = new GridPane();                          //Creates first layout as Grid Pane
+        layout1.setAlignment(Pos.CENTER);                           //Sets alignment to center
+        layout1.add(emtpy, 3, 3);           //Adds empty space
+        layout1.add(textfieldcode, 4, 3);   //Adds text field
+        layout1.add(getcode, 5, 3);         //Adds button
+        scene = new Scene(layout1, 500, 500);          //Sets new Scene
 
 
 
-        window.setScene(scene);
-        window.setTitle("NestGUI");
-        window.show();
+        Label label1 = new Label("Ambient temperature");
+        double lab = gd.getAmbient();
+        System.out.println(lab);
+        Label amtlabel = new Label("             " + String.valueOf(lab));
+
+        //Creates the second layout or scene, we use this to easily see what you see
+        GridPane grid = new GridPane();                     //Creates a new GridPane layout called grid
+        grid.add(label1, 0, 2);         //Adds label 1 to the screen
+        grid.add(amtlabel, 0, 3);
+        scene1 = new Scene(grid, primaryScreenBounds.getWidth(), primaryScreenBounds.getHeight());    //Creates a new scene and add the grid layout to it
+
+
+
+        window.setScene(scene);         //Taking the window var and setting what scene to display
+        window.setTitle("NestGUI");     //Sets the title of the window or state
+        window.show();                  //Displays window
     }
 }

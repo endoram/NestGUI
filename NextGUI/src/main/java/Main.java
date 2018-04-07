@@ -50,6 +50,14 @@ public class Main implements GuiDel {
 
     }
 
+    @Override
+    public double getAmbient() {
+        NestInformation NI = new NestInformation();
+     //   NI.getAmbient() = double var;
+
+        return var;
+    }
+
     public static void main(String[] args){
         displayPage();
         Gui.startgui(new Main());
