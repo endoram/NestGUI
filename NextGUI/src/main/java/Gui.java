@@ -67,8 +67,8 @@ public class Gui extends Application {
 
 
 
-        Label label1 = new Label("Ambient temperature");
-        Label ambientTemp1 = new Label("" );
+        
+        Gui.ambientTemp1 = new Label("Ambient temperature");
 
         //Creates the second layout or scene, we use this to easily see what you see
         GridPane grid = new GridPane();                     //Creates a new GridPane layout called grid
