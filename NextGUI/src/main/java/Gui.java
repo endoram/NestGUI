@@ -35,7 +35,8 @@ public class Gui extends Application {
 
     public static void displayNest(NestInformation ti) {
         Gui.ambientTemp = ti.getAmbient();
- //       Gui.ambientTemp1.setLineSpacing(ambientTemp);
+        Gui.ambientTemp1.setLineSpacing(ambientTemp);
+        System.out.print("Ambient temp: " + Gui.ambientTemp);
     }
 
 
@@ -66,14 +67,14 @@ public class Gui extends Application {
         scene = new Scene(layout1, 500, 500);          //Sets new Scene
 
 
-
+        Label label1 = new Label("Ambient temperature");
         
-        Gui.ambientTemp1 = new Label("Ambient temperature");
+        Gui.ambientTemp1 = new Label("");
 
         //Creates the second layout or scene, we use this to easily see what you see
         GridPane grid = new GridPane();                     //Creates a new GridPane layout called grid
         grid.add(label1, 0, 2);         //Adds label 1 to the screen
-        grid.add(ambientTemp1, 0, 3);
+        grid.add(Gui.ambientTemp1, 0, 3);
         scene1 = new Scene(grid, primaryScreenBounds.getWidth(), primaryScreenBounds.getHeight());    //Creates a new scene and add the grid layout to it
 
 
