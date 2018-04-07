@@ -1,5 +1,5 @@
 public interface GuiDel {
-    void codeEnter(String code);
-    void increment();
-    void decrement();
+    public void codeEnter(String code)
+    public void increment();
+    public void decrement();
 }
