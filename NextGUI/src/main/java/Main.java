@@ -50,12 +50,12 @@ public class Main implements GuiDel {
 
     }
 
-    @Override
-    public double getAmbient() {
-        NestInformation NI = new NestInformation();
-     //   NI.getAmbient() = double var;
+    public static void setTarget(String key, double temp) {
+        nestMan.setTarget(key, temp);
+    }
 
-        return var;
+    public static NestInformation getNestInfo() {
+        return nestMan.getNestInfo();
     }
 
     public static void main(String[] args){

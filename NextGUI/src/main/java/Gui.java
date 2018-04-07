@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 import javafx.geometry.Rectangle2D;
 import javafx.stage.Screen;
 
+import javax.management.StringValueExp;
+
 
 //Class in charge of the gui also extends class Application
 public class Gui extends Application {
@@ -17,18 +19,25 @@ public class Gui extends Application {
     Label label1;
     Button getcode;
     TextField textfieldcode;
+    static Label ambientTemp1;
 
 
     Stage window;
     Scene scene, scene1;
 
     static GuiDel gd;
-    static NestSRInterface nsri;
+    static double ambientTemp;
 
     public static void startgui(GuiDel gd){
         Gui.gd = gd;
         launch();
     }
+
+    public static void displayNest(NestInformation ti) {
+        Gui.ambientTemp = ti.getAmbient();
+ //       Gui.ambientTemp1.setLineSpacing(ambientTemp);
+    }
+
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -59,14 +68,12 @@ public class Gui extends Application {
 
 
         Label label1 = new Label("Ambient temperature");
-        double lab = gd.getAmbient();
-        System.out.println(lab);
-        Label amtlabel = new Label("             " + String.valueOf(lab));
+        Label ambientTemp1 = new Label("" );
 
         //Creates the second layout or scene, we use this to easily see what you see
         GridPane grid = new GridPane();                     //Creates a new GridPane layout called grid
         grid.add(label1, 0, 2);         //Adds label 1 to the screen
-        grid.add(amtlabel, 0, 3);
+        grid.add(ambientTemp1, 0, 3);
         scene1 = new Scene(grid, primaryScreenBounds.getWidth(), primaryScreenBounds.getHeight());    //Creates a new scene and add the grid layout to it
 
 
