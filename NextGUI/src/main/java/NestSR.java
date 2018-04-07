@@ -44,14 +44,27 @@ public class NestSR {
         return accessToken;
     }
 
+    private HttpResponse<JsonNode> putRequest(String url, double temp) {
+        try {
+            return Unirest.put(url)
+                .header("Content-Type", "application/json")
+                .header("accept", "application/json")
+                .header("Authorization", "Bearer " + accessToken)
+                .body("{\"target_temperature_f" + "\": " + (int)Math.round(temp) + "}")
+                .asJson();
+        } catch (Throwable err) {
+            System.out.println(err);
+            return null;
+        }
+    }
+
     public void setTarget(String key, double temp) {
         try {
-            HttpResponse<JsonNode> res = Unirest.put(devicesUrl + "/devices/thermostats/" + key)
-                .header("Content-Type", "application/json")
-                .header("Authorization", "Bearer " + accessToken)
-                .body("{\"target_temperature_f" + "\": " + temp + "}")
-                .asJson();
-            System.out.println(res.getBody().getObject());
+            HttpResponse<JsonNode> res = putRequest(devicesUrl + "/devices/thermostats/" + key, temp);
+            if (res.getStatus() == 307) {
+                String newUrl = res.getHeaders().getFirst("Location");
+                putRequest(newUrl, temp);
+            }
         } catch (Throwable err) {
             System.out.println("Error changing temperature: " + temp);
         }

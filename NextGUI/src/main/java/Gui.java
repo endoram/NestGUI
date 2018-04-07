@@ -35,8 +35,9 @@ public class Gui extends Application {
 
     public static void displayNest(NestInformation ti) {
         Gui.ambientTemp = ti.getAmbient();
-        Gui.ambientTemp1.setLineSpacing(ambientTemp);
+        Gui.ambientTemp1.setLineSpacing(Gui.ambientTemp);
         System.out.print("Ambient temp: " + Gui.ambientTemp);
+        Gui.ambientTemp1.setText(Double.toString(Gui.ambientTemp));
     }
 
 

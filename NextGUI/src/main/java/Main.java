@@ -36,6 +36,8 @@ public class Main implements GuiDel {
         NestInformation ti = nestMan.getNestInfo();
         nestInformation = ti;
         Gui.displayNest(ti);
+        nestInformation.target++;
+        nestMan.setTarget(nestInformation.code, nestInformation.target);
     }
 
     @Override
